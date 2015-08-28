@@ -1,0 +1,62 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+    <ui:with field="res" type="com.adamantium.company.gwtp.client.resources.AppResources"/>
+
+    <ui:style>
+        .cellTable {
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+    </ui:style>
+
+    <g:HTMLPanel>
+
+        <header>
+            <div class="{res.style.container}">
+                <h1>GWTP Company CRUD Example</h1>
+                <ul>
+                    <li>
+                        <a href="/gwtpcompany.html">[ Project Home ]</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ArcBees/GWTP-Samples/tree/master/gwtp-samples/gwtp-sample-basic-spring">
+                            [ Source ]
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="{res.style.container}">
+
+            <p>
+                <strong>Company List:</strong>
+            </p>
+            <!--<div>-->
+            <!--<c:CellTable addStyleNames='{style.cellTable}' pageSize='15' ui:field='cellTable' />-->
+            <!--</div>-->
+
+            <table cellspacing='0' cellpadding='0' style='width:100%;'>
+                <tr>
+                    <td align="left">
+                        <g:Button ui:field="detailsButton">Details</g:Button>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign='top'>
+                        <c:CellTable addStyleNames='{style.cellTable}' pageSize='15' ui:field='cellTable'/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align='center'>
+                        <c:SimplePager ui:field='pager'/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </g:HTMLPanel>
+</ui:UiBinder> 

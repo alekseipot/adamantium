@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <ui:with field="res" type="com.adamantium.company.gwtp.client.resources.AppResources"/>
+
+    <g:HTMLPanel>
+
+        <div class="{res.style.box}">
+            <g:HTML ui:field="address"/>
+        </div>
+
+    </g:HTMLPanel>
+
+</ui:UiBinder>

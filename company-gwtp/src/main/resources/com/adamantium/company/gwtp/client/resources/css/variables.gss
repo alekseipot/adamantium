@@ -1,0 +1,17 @@
+@provide 'variables';
+
+/**
+ * Colors
+ */
+
+@def C_PANEL_DARK               eval("com.adamantium.company.gwtp.client.resources.Variables.C_PANEL_DARK");
+@def C_PANEL_LIGHT              eval("com.adamantium.company.gwtp.client.resources.Variables.C_PANEL_LIGHT");
+@def C_PANEL_MEDIUM             eval("com.adamantium.company.gwtp.client.resources.Variables.C_PANEL_MEDIUM");
+@def C_MESSAGEBOX               eval("com.adamantium.company.gwtp.client.resources.Variables.C_MESSAGEBOX");
+@def C_TITLE                    eval("com.adamantium.company.gwtp.client.resources.Variables.C_TITLE");
+
+/**
+ * Sizes
+ */
+
+@def S_TITLE                    eval("com.adamantium.company.gwtp.client.resources.Variables.S_TITLE");
